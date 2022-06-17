@@ -11,17 +11,15 @@
 
 <body>
     <h1>To-Do List</h1>
-    <form target="_self">
-        <div>
-            <input type="text" name="taskBox"   ></input>
-            <input type="button" name="taskBtn" value="Adicionar">
-        </div>
-        <div>
-            <label for="task"></label>
-            <input type="checkbox" name="" id="">
-        </div>
-    </form>
+    <div>
+        <form id="taskForm">
+            <div>
+                <input id="taskBox" type="text" placeholder="Digite sua tarefa..."></input>
+                <input type="submit" id="taskBtn" value="Adicionar">
+            </div>
+            <div id="taskList"></div>
+        </form>
+    </div>
 </body>
 <script src="assets/js/script.js"></script>
-
 </html>

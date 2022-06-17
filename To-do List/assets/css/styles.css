@@ -24,13 +24,25 @@ button {
     text-align: center;
 }
 
-#counter {
-    display: flex;
+input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
-#currentNumber {
+#taskList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.taskItem {
     display: flex;
     align-items: center;
-    margin: 0 20px;
-    font-size: 16pt;
+    margin-bottom: 10px;
+}
+
+:checked + label {
+    text-decoration: line-through;
+    color: grey;
 }
