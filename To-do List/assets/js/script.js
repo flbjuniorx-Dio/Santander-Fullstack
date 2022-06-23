@@ -15,7 +15,7 @@ function addTask(description) {
     const taskDescriptionNode = document.createTextNode(description);
 
     newTask.setAttribute('type','checkbox');
-    newTask.setAttribute('name',description);
+    //  newTask.setAttribute('name',description);
     newTask.setAttribute('id',description)
 
     taskLabel.setAttribute('for',description);
