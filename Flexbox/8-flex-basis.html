@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fundamentos - flex basic</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            .container {
+                max-width: 500px;
+                border: 1px solid black;
+                display: flex;
+            }
+
+            .item {
+                background-color: orange;
+                color: white;
+                text-align: center;
+                margin: 5px;
+            }
+
+            .b-auto {
+                flex-basis: auto;
+            }
+
+            .fg-1 {
+                flex-grow: 1;
+            }
+
+            .fg-2 {
+                flex-grow: 2;
+            }
+
+            .b-0 {
+                flex-basis: 0;;
+            }
+
+            .w100 {
+                flex-basis: 100px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h2>Auto</h2>
+        <div class="container">
+            <div class="item b-auto fg-1">A</div>
+            <div class="item b-auto fg-1">BBBB</div>
+            <div class="item b-auto fg-1">C</div>
+            <div class="item b-auto fg-2">DEF</div>
+        </div>
+
+        <h2>Basis 0</h2>
+        <div class="container">
+            <div class="item b-0 fg-1">AAAA</div>
+            <div class="item b-0 fg-1">BBB</div>
+            <div class="item b-0 fg-1">C</div>
+            <div class="item b-0 fg-1">DEF</div>
+        </div>
+
+        <h2>Basis - Width</h2>
+        <div class="container">
+            <div class="item w100">AA</div>
+            <div class="item w100">BBB</div>
+            <div class="item w100">CCC</div>
+            <div class="item w100">DEF</div>
+        </div>
+    </body>
+</html>

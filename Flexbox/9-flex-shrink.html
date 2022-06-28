@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fundamentos - flex shrink</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style>
+            .flex-container {
+                display: flex;
+                border: 1pt solid black;
+                max-width: 500px;
+                margin-bottom: 10px;
+            }
+
+            .item {
+                background-color: orangered;
+                font-size: 24px;
+                text-align: center;
+                margin: 5px;
+            }
+
+            .shrink-0 {
+                flex-shrink: 1;
+                flex-basis: 100px;
+            }
+
+            .shrink-1 {
+                flex-shrink: 1;
+            }
+
+            .shrink-2 {
+                flex-shrink: 2;
+                flex-basis: 100px;
+            }
+
+            .shrink-3 {
+                flex-shrink: 3;
+                flex-basis: 100px;
+            }
+
+            .grow-1 {
+                flex-grow: 1;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h2>flex-shrink 1</h2>
+        <div class="flex-container">
+            <div class="item shrink-1 grow-1">A</div>
+            <div class="item shrink-1 grow-1">B</div>
+            <div class="item shrink-1 grow-1">C</div>
+            <div class="item shrink-1 grow-1">D</div>
+            <div class="item shrink-1 grow-1">E</div>
+        </div>
+
+        <h2>with text</h2>
+        <div class="flex-container">
+            <div class="item shrink-1 grow-1">A</div>
+            <div class="item shrink-1 grow-1">Lorem ipsum dolor</div>
+            <div class="item shrink-1 grow-1">C</div>
+            <div class="item shrink-1 grow-1">D</div>
+            <div class="item shrink-1 grow-1">E</div>
+        </div>
+
+        <h2>flex-shrink 0</h2>
+        <div class="flex-container">
+            <div class="item shrink-0 grow-1">A</div>
+            <div class="item shrink-0 grow-1">B</div>
+            <div class="item shrink-0 grow-1">Lorem ipsum</div>
+            <div class="item shrink-0 grow-1">dolor domet</div>
+            <div class="item shrink-0 grow-1">E</div>
+        </div>
+
+        <h2>flex-shrink mix</h2>
+        <div class="flex-container">
+            <div class="item shrink-0 grow-1">fs0</div>
+            <div class="item shrink-1 grow-1">flex-shrink 1</div>
+            <div class="item shrink-2 grow-1">fs2</div>
+            <div class="item shrink-3 grow-1">fs3</div>
+        </div>
+    </body>
+</html>

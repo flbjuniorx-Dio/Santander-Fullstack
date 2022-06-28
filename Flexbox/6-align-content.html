@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fundamentos - Align Content</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            .container {
+                height: 400px;
+                max-width: 300px;
+                margin: 0;
+                display: flex;
+                flex-wrap: wrap;
+                border: 1px solid black;
+            }
+
+            .item {
+                background-color: orangered;
+                padding: 5px;
+                margin: 5px;
+                color: white;
+                text-align: center;
+                flex: 1;
+                border: 2px solid black;
+            }
+
+            .center {
+                align-content: center;
+            }
+
+            .stretch {
+                align-content: stretch;
+            }
+
+            .flex-start {
+                align-content: flex-start;
+            }
+
+            .flex-end {
+                align-content: flex-end;
+            }
+
+            .space-around {
+                align-content: space-around;
+            }
+
+            .space-between {
+                align-content: space-between;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h1>Row</h1>
+
+        <h2>Stretch</h2>
+        <section class="container stretch">
+            <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing</div>
+            <div class="item">Accusamus quibusdam quisquam debitis a corrupti aspernatur nulla!</div>
+            <div class="item">Molestias tempora</div>
+            <div class="item">nesciunt ullam </div>
+            <div class="item">sapiente porro</div>
+            <div class="item">officia cum eveniet nobis cupiditate</div>
+            <div class="item">vero commodi expedita.</div>
+        </section>
+
+        <h2>Central</h2>
+        <section class="container center">
+            <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing</div>
+            <div class="item">Accusamus quibusdam quisquam debitis a corrupti aspernatur nulla!</div>
+            <div class="item">Molestias tempora</div>
+            <div class="item">nesciunt ullam </div>
+            <div class="item">sapiente porro</div>
+            <div class="item">officia cum eveniet nobis cupiditate</div>
+            <div class="item">vero commodi expedita.</div>
+        </section>
+
+        <h2>Flex-start</h2>
+        <section class="container flex-start">
+            <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing</div>
+            <div class="item">Accusamus quibusdam quisquam debitis a corrupti aspernatur nulla!</div>
+            <div class="item">Molestias tempora</div>
+            <div class="item">nesciunt ullam </div>
+            <div class="item">sapiente porro</div>
+            <div class="item">officia cum eveniet nobis cupiditate</div>
+            <div class="item">vero commodi expedita.</div>
+        </section>
+
+        <h2>Flex-end</h2>
+        <section class="container flex-end">
+            <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing</div>
+            <div class="item">Accusamus quibusdam quisquam debitis a corrupti aspernatur nulla!</div>
+            <div class="item">Molestias tempora</div>
+            <div class="item">nesciunt ullam </div>
+            <div class="item">sapiente porro</div>
+            <div class="item">officia cum eveniet nobis cupiditate</div>
+            <div class="item">vero commodi expedita.</div>
+        </section>
+
+        <h2>Space-around</h2>
+        <section class="container space-around">
+            <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing</div>
+            <div class="item">Accusamus quibusdam quisquam debitis a corrupti aspernatur nulla!</div>
+            <div class="item">Molestias tempora</div>
+            <div class="item">nesciunt ullam </div>
+            <div class="item">sapiente porro</div>
+            <div class="item">officia cum eveniet nobis cupiditate</div>
+            <div class="item">vero commodi expedita.</div>
+        </section>
+
+        <h2>Space-between</h2>
+        <section class="container space-between">
+            <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing</div>
+            <div class="item">Accusamus quibusdam quisquam debitis a corrupti aspernatur nulla!</div>
+            <div class="item">Molestias tempora</div>
+            <div class="item">nesciunt ullam </div>
+            <div class="item">sapiente porro</div>
+            <div class="item">officia cum eveniet nobis cupiditate</div>
+            <div class="item">vero commodi expedita.</div>
+        </section>
+    </body>
+</html>
