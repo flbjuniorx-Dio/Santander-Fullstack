@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Turismos</title>
     <link rel="stylesheet" href="./style.css">
-    <title>Flex Turismo</title>
 </head>
+
 <body>
     <header>
-        <h1>Flex Turismo</h1>
-        <ul>
-            <li <a href="#quem-somos">Quem Somos</a></li>
-            <li <a href="#servicos">Serviços</a></li>
-            <li <a href="#planos">Planos</a></li>
-        </ul>
+        <div class="flex-container">
+            <div class="menu">
+                <h1>FlexTurismos</h1>
+            </div>
+            <ul class="list-items">
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#planos">Planos</a></li>
+            </ul>
+        </div>
     </header>
 
-    <div>
-        <div>
-            <h1>Flex <br> Turismo</h1>
+    <div class="flex-container">
+        <div class="texto-apresentacao">
+            <h1>Flex <br>Turismos</h1>
             <p>O melhor serviço para você!</p>
             <a href="#">Saiba Mais!</a>
         </div>
@@ -27,76 +32,91 @@
         <div>
             <div><img src="./images/0-main.png" alt="banner de apresentação"></div>
         </div>
+    </div>
 
+    <div class="flex-container" id="quem-somos">
         <div>
             <h2>Quem somos</h2>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
-            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. </p>
+            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                opposed to using 'Content here, content here', making it look like readable English.</p>
+        </div>
+
+        <div>
+            <img src="./images/1-quem-somos.png" alt="balcão de atendimento">
         </div>
     </div>
 
-    <div>
-        <div><h2>Serviços</h2></div>
-
+    <div class="flex-container container-externo">
         <div>
+            <h2>Serviços</h2>
+        </div>
+
+        <div class="list-servicos">
             <div>
-                <div><img src="./images/icon-2.png" alt="hospedagens"></div>]
-                ´<p>hospedagens</p>
-                <a href="#">Comprar agora</a>
+                <div><img src="./images/icon-2.png" alt="hospedagens"></div>
+                <p>Hospedagens</p>
+                <a href="#">Comprar Agora</a>
             </div>
 
             <div>
-                <div><img src="./images/icon-1.png" alt="pacotes de viagem"></div>
-                <p>Pacotes de viagem</p>
-                <a href="#">Comprar agora</a>
+                <div><img src="./images/icon-1.png" alt="pacote de viagens"></div>
+                <p>Pacotes de viagens</p>
+                <a href="#">Comprar Agora</a>
             </div>
 
             <div>
                 <div><img src="./images/icon-3.png" alt="roteiros personalizados"></div>
                 <p>Roteiros personalizados</p>
-                <a href="#">Comprar agora</a>
+                <a href="#">Comprar Agora</a>
             </div>
+
         </div>
     </div>
 
     <div>
-        <div>
-            <h3>Plano 1</h3>
-            <ul>
-                <li>Suporte 24h</li>
-                <li>Serviço de quarto</li>
-                <li>Guia turístico</li>
-            </ul>
-            <a href="#">Saiba mais!</a>
-        </div>
+
         <div>
             <h3>Plano 2</h3>
             <ul>
                 <li>Suporte 24h</li>
-                <li>Serviço de quarto</li>
+                <li>Serviços de quarto</li>
+                <li>Guia turístico</li>
+            </ul>
+            <a href="#">Saiba Mais!</a>
+        </div>
+
+        <div>
+            <h3>Plano 2</h3>
+            <ul>
+                <li>Suporte 24h</li>
+                <li>Serviços de quarto</li>
                 <li>Guia turístico</li>
                 <li>Roteiro de trilhas</li>
                 <li>Serviço personalizado</li>
             </ul>
-            <a href="#">Saiba mais!</a>
+            <a href="#">Saiba Mais!</a>
         </div>
+
         <div>
             <h3>Plano 3</h3>
             <ul>
                 <li>Suporte 24h</li>
-                <li>Serviço de quarto</li>
+                <li>Serviços de quarto</li>
                 <li>Guia turístico</li>
                 <li>Roteiro de trilhas</li>
                 <li>Serviço personalizado</li>
                 <li>Área Vip</li>
             </ul>
-            <a href="#">Saiba mais!</a>
+            <a href="#">Saiba Mais!</a>
         </div>
     </div>
 
     <footer>
         <p>&copy; 2021 CSS Flexbox</p>
-        <p>Desenvolvido por: <a href="https://github.com/flbjuniorx-Dio/Santander-Fullstack">@flbjuniorx</a></p>
+        <p>Desenvolvido por: Seu nome aqui dev</p>
     </footer>
 </body>
+
 </html>
