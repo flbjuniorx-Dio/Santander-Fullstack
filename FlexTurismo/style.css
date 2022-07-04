@@ -110,10 +110,61 @@ header .list-items {
 
 .container-externo {
     background-color: #122A57;
+    color: wheat;
 }
 .list-servicos {
     display: flex;
     align-items: flex-end;
     flex-direction: row;
     justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.planos {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.item-plano {
+    border: 2px solid #122A57;
+}
+
+.item-plano h3 {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.item-plano h3::after {
+    content: "";
+    background-color: #122A57;
+    width: 100%;
+    height: 3px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.item-plano ul {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.item-plano ul li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.item-plano ul li::before {
+    content: "";
+    background-color: #122A57;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
 }

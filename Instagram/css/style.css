@@ -1,0 +1,22 @@
+.instagram-wrapper {
+    
+}
+
+.instagram-phone {
+    align-self: center;
+    background-image: url(../static/images/homepage/phones/home-phones.png/1dc085cdb87d.png);
+    background-position: -46px 0;
+    background-size: 468.32px 634.15px;
+    flex-basis: 380.32px;
+    height: 581.15px;
+    margin-bottom: 12px;
+    margin-right: 32px;
+    -webkit-flex-basis: 380.32px;
+    -ms-flex-preferred-size: 380.32px;
+}
+
+.phone-screenshot {
+    height: 538.84px;
+    position: inherit;
+    width: 250px;
+}
