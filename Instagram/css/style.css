@@ -1,12 +1,39 @@
+/* Reset*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
 .instagram-wrapper {
-    
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;    
 }
 
 .instagram-phone {
+    display: flex;
     align-self: center;
     background-image: url(../static/images/homepage/phones/home-phones.png/1dc085cdb87d.png);
     background-position: -46px 0;
     background-size: 468.32px 634.15px;
+    background-repeat: no-repeat;
     flex-basis: 380.32px;
     height: 581.15px;
     margin-bottom: 12px;
@@ -17,6 +44,48 @@
 
 .phone-screenshot {
     height: 538.84px;
-    position: inherit;
     width: 250px;
+    margin-left: 112px;
+    padding-top: 25px;
+}
+
+.instagram-continue {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    min-height: 24rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgrey;
+}
+
+/* nth-child - select the n-th child of element */
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.instagram-logo {
+    height: 3rem;
+}
+
+.profile-photo {
+    align-self: center;
+    border: solid 1px #efefef;
+    border-radius: 100px;
+    display: block;
+    height: 84px;
+    margin-bottom: 16px;
+    margin-top: 8px;
+    width: 84px;
 }
