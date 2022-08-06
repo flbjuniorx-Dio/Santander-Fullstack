@@ -12,7 +12,7 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243, 243, 243);
+    background-image: url(../static/images/homepage/background/brazil-flag-4.jpg);
     margin: 0;
     padding: 0;
     display: flex;
@@ -24,7 +24,9 @@ body {
     align-items: center;
     justify-content: start;
     width: 60%;
-    height: 100vh;    
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
 }
 
 .instagram-phone {
@@ -55,7 +57,9 @@ position: relative;
 .instagram-continue {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    margin-top: 12px;
+    max-width: 350px;
     flex-direction: column;
     align-items: center;
     width: 50%;
@@ -95,6 +99,7 @@ position: relative;
 }
 
 .get-the-app {
+<<<<<<< HEAD
     color: rgba(var(--i1d,38,38,38),1);
     font-size: 14px;
     line-height: 18px;
@@ -104,4 +109,21 @@ position: relative;
 
 .app-stores img {
     width: 150px;
+=======
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+}
+
+.app-download img {
+    justify-content: center;
+    height: 40px;
+>>>>>>> 065810b8d4f4d62670aa836c29615b7b8272c662
 }
