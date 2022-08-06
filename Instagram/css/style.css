@@ -37,16 +37,19 @@ body {
     flex-basis: 380.32px;
     height: 581.15px;
     margin-bottom: 12px;
-    margin-right: 32px;
+    padding-right: 35px;
     -webkit-flex-basis: 380.32px;
     -ms-flex-preferred-size: 380.32px;
 }
 
 .phone-screenshot {
-    height: 538.84px;
+/*    height: 538.84px;
     width: 250px;
-    margin-left: 112px;
+    margin-left: 105px;
     padding-top: 25px;
+*/
+margin: 27px 0 0 113px;
+position: relative;
 }
 
 .instagram-continue {
@@ -63,6 +66,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     background-color: white;
     width: 100%;
@@ -88,4 +92,16 @@ body {
     margin-bottom: 16px;
     margin-top: 8px;
     width: 84px;
+}
+
+.get-the-app {
+    color: rgba(var(--i1d,38,38,38),1);
+    font-size: 14px;
+    line-height: 18px;
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+}
+
+.app-stores img {
+    width: 150px;
 }
